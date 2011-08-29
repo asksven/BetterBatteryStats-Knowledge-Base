@@ -1,0 +1,99 @@
+<!doctype html>
+<!-- see http://cssgrid.net/ -->
+<html lang="en">
+<head>
+    <title>Help</title>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+     
+</head> 
+ 
+<body> 
+<div class="container">
+<div class="row">
+ 
+	
+<h2>BetterBatteryStats<span>How To</span></h2> 
+<div id="content"> 
+This document provides an insight about how to use BetterBatteryStats to reduce the battery drain in a systematic manner.
+<p id="intro">The process to follow is pretty simple and follows this simple flowchart:</p>
+<img src="howto.png" alt="flowchart"/><br/><br/><br/>
+<h2>Determine awake vs. screen on ratio</h2>
+<p>
+The awake vs. screen on ratio tells you how much time your phone has spent with the display being off but not being in the optimal deep-sleep mode. During this time the reason why your phone is not going to deep-sleep or is being woken up from deep-sleep is caused by background processes (services, apps reacting on different events). These use partial wakelocks to prevent your phone from reaching its optimal state of deep-sleep. The good news is we can change this to some extent and by doing so improve the battery life dramatically.
+</p>
+
+<h2>Check wakelocks</h2>
+<p>
+Go to the "Partial wakelocks" statistic and check the list. The wakelocks are sorted by time in descending order. In the first step we want to check for high times (minutes or more), once there are no hot spots left we want to look at the high counts.
+</p>
+<H2>Deinstall or freeze</H2>
+<p>
+Once a cause for wakelocks has been spotted you have to ask yourself if you even use that app. If not disable/deinstall/freeze it.
+Go back to the start and take another reading to see the effect of the action.
+</p>
+<h2>Check / change settings</h2>
+<p>
+Sometimes we really want the app / functionality causing the wakelocks and the good news is there is still hope. Many apps have settings that condition their behaviour so these should be checked:
+<ul>
+	<li>frequency: having twitter check for new messages every 2 minutes is not something compatible with a long battery life. Once you know the cost of a functionality it may be easier to decide to use it on demand instead of let it running as a background scheduled task</li>
+	<li>quantity: check for optional services like e.g. cloud backup, full sync etc. and ask yourself if you really need all that stuff</li>
+</ul>
+
+<h2>Optimize screen-on drain</h2>
+<p>
+If you awake time is not less than the screen on time there are two aspects to consider:
+<ul>
+	<li>What is preventing the phone from sleeping is you interacting with your phone</li>
+	<li>There still may be too many things happening in the backgroud that would prevent you phone from sleeping if you weren't using it</li>	
+</ul>
+So even if partial wakelocks are not the root cause of you drain we still recommend checking them and make sure there is nothing unwanted happening in the background.
+<br/>
+Following tips can help you lower the drain when screen is on:
+<ul>
+	<li>Don't use auto brightness but keep it as low as possible</li>
+	<li>If the minimum brightness is still too high consider using a 3rd party tool like screen filter</li>
+	<li>Don't use animated wallpapers</li>
+	<li>Lower your auto-off timeout to turn off the screen faster if unused</li>
+	<li>Check the refresh settings of your widgets</li>
+	<li>Use Wifi instead of 3G data</li>
+	<li>Check for rogue apps in terms of CPU consumption (process view)</li>
+	<li>Turn your GPS off (automatic is not was good as off)</li>
+	<li>When you are finished using an app close it with the "back" button. This will terminate it and avoid background management</li>
+	<li>Don't use any auto killer apps. If there are apps you don't want to be started or cached freeze them or configure their auto-start properly</li>
+	<li>Don't use and power saving tools like Juice Defender or Green Power: most apps do not behave properly when they can't use the data connection and will generate overhead by trying</li>
+</ul>
+</p>
+<h2>Enjoy your successes</h2>
+<p>
+One basic rule in performance optimization is to check the results for each action taken and this applies here too:
+<ul>
+	<li>don't make too many changes at once: once a hot spot has been removed you may have a completely different picture. This is why processing two or more findings at once may be a waste of time</li>
+	<li>switching kernel, ROM or modem during a round of optimization will probably distort your statistics, avoid running tests during this time as the results may be demotivating</li>
+	<li>consider external factors, in case of unexpected stats being reported by BBS, run the tests again to validate readings: our phones are not closed systems and conditions like network coverage may influence readings. In case of doubt, confirm results by repeating the readings under different conditions in order to correctly diagnose a problem</li> 
+	<li>don't obsess: you want to enjoy your phone too so don't obsess by hunting down the last second of wakelock. Enjoy your results and come back to check the stats from time to time of if you feel battery life is getting worse</li>
+</ul>
+</div> 
+<br />	
+	<nav class=""> 
+		<ul> 
+			<li><a href="/help.html">Getting started</a></li> 
+			<li><a href="/howto.html">How To...</a></li> 
+			<!-- <li><a href="/wakelocks.html">Wakelocks</a></li> -->
+		</ul> 
+	</nav> 
+</div>
+</div>
+</body>
+
+</HTML>
