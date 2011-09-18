@@ -6,11 +6,11 @@
     {
       'fqn' : 'AlarmManager',
       'title' : 'Alarm Manager',
-      'url' : 'http:////'
+      'url' : 'http://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/AlarmManager'
     },{
       'fqn' : '',
       'title' : '*network-location*',
-      'url' : 'http:////www.cri.ch//sven'
+      'url' : 'http://www.cri.ch/sven'
     }
   ]
 }
