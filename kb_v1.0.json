@@ -10,7 +10,11 @@
     },{
       'fqn' : '',
       'title' : '*network-location*',
-      'url' : 'http://www.cri.ch/sven'
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/nework-location'
+    },{
+      'fqn' : '',
+      'title' : '*sync*',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/sync'
     }
   ]
 }
