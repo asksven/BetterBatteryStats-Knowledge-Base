@@ -16,8 +16,8 @@
       'title' : '*sync*',
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/sync'
     },{
-      'fqn' : 'PowerManagerService',
-      'title' : 'Power Manager Service',
+      'fqn' : '',
+      'title' : '"PowerManagerService"',
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/PowerManagerService'
     }
   ]
