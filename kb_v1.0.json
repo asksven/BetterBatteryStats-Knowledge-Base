@@ -29,6 +29,10 @@
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/svnet-dormancy'
     },{
       'fqn' : '',
+      'title' : '"multipdp"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/svnet-dormancy'
+    },{
+      'fqn' : '',
       'title' : '"vbus_present"',
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/vbus_present'
     },{
@@ -39,6 +43,26 @@
       'fqn' : '',
       'title' : '"wlan_wake"',
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/wlan_wake'
+    },{
+      'fqn' : '',
+      'title' : '"AudioOut_1"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/AudioOut_1'
+    },{
+      'fqn' : '',
+      'title' : '"ConnectivityService"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/ConnectivityService'
+    },{
+      'fqn' : '',
+      'title' : '"GTALK_ASYNC_CONN_com.google.android.gsf.gtalkservi-ce.AndroidEndpoint"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/GTALK_ASYNC_CONN_com.google.android.gsf.gtalkservi-ce.AndroidEndpoint'
+    },{
+      'fqn' : '',
+      'title' : '"network-location"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/nework-location'
+    },{
+      'fqn' : '',
+      'title' : '"SyncLoopWakeLock"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/SyncLoopWakeLock'
     }
   ]
 }
