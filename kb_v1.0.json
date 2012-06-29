@@ -63,6 +63,10 @@
       'fqn' : '',
       'title' : '"SyncLoopWakeLock"',
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/SyncLoopWakeLock'
+    },{
+      'fqn' : '',
+      'title' : '"deleted_wake_locks"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/deleted_wake_locks'
     }
   ]
 }
