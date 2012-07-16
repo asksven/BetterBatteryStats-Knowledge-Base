@@ -67,6 +67,10 @@
       'fqn' : '',
       'title' : '"deleted_wake_locks"',
       'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/deleted_wake_locks'
+    },{
+      'fqn' : '',
+      'title' : '"suspend_backoff"',
+      'url' : 'https://github.com/asksven/BetterBatteryStats-Knowledge-Base/wiki/suspend_backoff'
     }
   ]
 }
