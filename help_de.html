@@ -27,6 +27,19 @@
 
 <p id="intro">Hier findest Du Details dar&uuml;ber wie die Ansichten und Optionen von BetterBatteryStatistics organisiert sind.
 Mehr dar&uuml;findest Du in der how-to Dokumentation.</p>
+<h2>Referenzen</h2>
+<p>
+BetterBatteryStats sammelt keine daten im Hintergrund sondern nutzt sog. Referenzen um sich Daten zu merken. Diese Referenzen werden zu bestimmten Zeitpunkten bzw. zu bestimmten Ereignissen gespeichert:
+<ul>
+	<li><b>Boot</b>: wenn das Handy neu gestartet wird; l&ouml;scht alle anderen Referenzen</li>
+	<li><b>Unplug</b>: wenn das Handy vom Ladekabel abgesteckt wird</li>
+	<li><b>Charged</b>: wenn das Handy zu 100% geladen ist</li>
+	<li><b>Screen Off</b>: wenn der Bildschirm ausgeht</li>
+	<li><b>Custom</b>: wenn die entsprechende Option aus dem Men&uuml; gew&auml;hlt wird</li>
+</ul>
+<br/><br/>
+<b>So lange diese Ereignisse nicht eingetreten sind bzw. nach einem Neustart des Handys informiert eine Meldung, dass eine Referenz fehlt darüber, dass das entsprechende Ereignis noch nicht eigetreten ist. Dies ist kein Fehler sondern BBS wurde so konzipiert</b>	
+
 <h2>Ansichten</h2>
 <p>Es gibt f&uuml;nf Ansichten:
 <ul>
@@ -37,13 +50,15 @@ Mehr dar&uuml;findest Du in der how-to Dokumentation.</p>
 	<li>Network: Netzwerk Statisti</li>k
 	<li>CPU states: CPU Frequenzen und Deep Sleep</li>
 	<li>Processes: cpu Zeit (user and system) auf Prozess-Ebene</li>
+	<li>Package informationen: zeigt Rechte und Services zu einem Package: diese Ansicht wird bei Click auf einem Icon ge&ouml;ffnet</li> 
 </ul></p>
 <p>und drei m&ouml;glichen Intervalle:
 <ul>
 	<li>Since charged: Details seit dem das Handy vollst&auml;ndig aufgeladen war</li>
 	<li>Since unplugged: Details seit dem das Handy vom Ladeger&auml;t oder USB-Kabel genommen wurde</li>
 	<li>Since custom reference: Details seit einer Benutzerdefinierten Referenz (siehe "Actions" Men&uuml;)</li>
-	<li>Since screen off: Details setid dem der Bildschirm ausgeschaltet wurde</li>
+	<li>Since screen off: Details seit dem der Bildschirm ausgeschaltet wurde</li>
+	<li>Since boot: Details seit dem das Handy neu gestatet wurde</li>
 	
 </ul></p>
 
@@ -63,6 +78,9 @@ Typischerweise sollte "Screen on" mit "Awake" vergleichbar sein. Dies bedeutet, 
 	<li>Wifi running: die Zeit in der Wifi verbunden war</li>
 	<li>Bluetooth On: die Zeit in der Bluetooth an war</li>
 </ul>
+<p>
+Anmerkung: alle Referenzen werden beim Neustart gel&ouml;scht, d.h. um "Since unplugged" zu nutzen muss erst das Handy erst einmal an das Ladeger&auml;t. 
+</p>
 <br/>
 <h3>Partial Wakelocks</h3>
 <p>
@@ -110,6 +128,7 @@ Die Liste zeigt die Prozesse und deren CPU-Verbrauch. Der CPU-Verbrauch ist in S
 		<li>Raw Alarms: Alarms seit Boot</li>
 		<li>Raw Kernel Wakelocks: Kernel Wakelocks seit Boot</li>
 		<li>Raw network stats: die Netzwerk Statistiken seit Boot</li>
+		li>CPU states: die CPU Zust&auml;nde seit Boot</li>
 		
 	</ul>
 	<li>Help: Zugriff auf die Online-Dokumentation</li>
